@@ -1,0 +1,26 @@
+<section class="bg-stone-950 relative">
+  <div class="section-content">
+    <div class="section-header">
+      <h2 class="text-lg">{{ experience_title }}</h2>
+      <span class="text-3xl font-semibold">{{ experience_subtitle }}</span>
+    </div>
+
+    {{ if experiences }}
+    <ul class="flex flex-col gap-12">
+      {{ experiences }}
+      <li class="p-32 bg-stone-800/50 rounded-xl">
+        <div class="flex flex-col md:flex-row justify-between gap-8">
+          <h3 class="text-xl font-medium">{{ company_name }}</h3>
+          <span class="text-stone-400">
+            {{ employment_date format="F, Y" }} - {{ end_date ? {{ end_date format="F" }} : "Present" }}
+          </span>
+        </div>
+      </li>
+      {{ /experiences }}
+    </ul>
+    {{ else }}
+    <p>No experience found</p>
+    {{ /if }}
+
+  </div>
+</section>

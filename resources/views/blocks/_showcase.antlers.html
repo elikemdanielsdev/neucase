@@ -1,0 +1,39 @@
+<section class="bg-stone-950 relative">
+  <div class="section-content">
+    <div class="section-header">
+      <h2 class="text-lg">{{ showcase_title }}</h2>
+      <span class="text-3xl font-semibold">{{ showcase_subtitle }}</span>
+    </div>
+
+    {{# {{ if showcase_items }}
+      <ul class="flex flex-col gap-3">
+        {{ showcase_items }}
+        <li class="rounded-xl overflow-hidden">
+          {{ glide:featured_image | format="webp" }}
+          <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-video object-cover" />
+          {{ /glide:featured_image }}
+        </li>
+        {{ /showcase_items }}
+      </ul>
+      {{ else }}
+      <p>No showcase items found</p>
+      {{ /if }} #}}
+
+      <ul class="flex flex-col gap-80">
+
+        {{ collection:showcase sort="date:desc" limit="3" }}
+        <li class="showcase-item sticky">
+          <a href="{{ url }}">
+            {{ glide:featured_image format="webp" }}
+            <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-video object-cover rounded-xl" />
+            {{ /glide:featured_image }}
+            <h3 class="font-semibold text-2xl mt-16">{{ title }}</h3>
+          </a>
+        </li>
+        {{ /collection:showcase }}
+
+      </ul>
+
+
+  </div>
+</section>

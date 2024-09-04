@@ -1,0 +1,104 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Lenis smooth scroll */
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Site-wide styles */
+
+body {
+  @apply 
+  bg-stone-950 
+  text-stone-300 
+  leading-normal 
+  min-h-screen 
+  flex 
+  flex-col 
+  font-manrope
+  antialiased;
+}
+
+header,
+section,
+footer {
+  @apply 
+  px-[5%];
+}
+
+section,
+footer {
+  @apply 
+  py-section;
+}
+
+section {
+  @apply 
+  z-10;
+}
+
+.content {
+  @apply 
+  mx-auto 
+  max-w-[87.5rem];
+}
+
+.hero-content {
+  @apply 
+  content 
+  flex 
+  flex-col 
+  items-start 
+  min-h-[80vh] 
+  justify-between;
+}
+
+.hero-title {
+  @apply 
+  text-hero-title 
+  font-bold 
+  leading-[100%] 
+  tracking-[-0.01em]
+  max-w-[75rem];
+}
+
+.hero-subtitle {
+  @apply 
+  text-hero-subtitle 
+  max-w-[37.5rem];
+}
+
+.section-content {
+  @apply 
+  content 
+  flex 
+  flex-col 
+  gap-80;
+}
+
+.section-header {
+  @apply 
+  flex 
+  flex-col 
+  gap-12
+  max-w-[37.5rem];
+}

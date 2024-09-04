@@ -1,0 +1,44 @@
+title: Showcase
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: featured_image
+            field:
+              container: assets
+              type: assets
+              display: 'Featured Image'
+              folder: showcase/2024
+              max_files: 1
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - showcase
+              max_items: 1
+              listable: false
+              localizable: true

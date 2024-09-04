@@ -1,0 +1,14 @@
+name: 'Elikem Daniels'
+super: true
+id: f7a890be-7998-402c-a92d-590bd4765484
+password_hash: $2y$12$Edysjyi/ErvzzG35ovi/muxbxkyNhvrX/9vmOvonyCzPaB6oKQoW2
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+    showcase:
+      columns:
+        - featured_image
+        - title
+        - date
+        - status

@@ -1,0 +1,123 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Blocks
+              instructions: 'Add blocks to build your page'
+              collapse: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    hero:
+                      display: Hero
+                      icon: align-object-top
+                      fields:
+                        -
+                          handle: hero_title
+                          field:
+                            type: text
+                            display: 'Hero Title'
+                        -
+                          handle: hero_subtitle
+                          field:
+                            type: text
+                            display: 'Hero Subtitle'
+                    experience:
+                      display: Experience
+                      icon: text-formatting-image-bottom
+                      fields:
+                        -
+                          handle: experience_title
+                          field:
+                            type: text
+                            display: 'Experience Title'
+                        -
+                          handle: experience_subtitle
+                          field:
+                            type: text
+                            display: 'Experience Subtitle'
+                        -
+                          handle: experiences
+                          field:
+                            type: replicator
+                            display: Experiences
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  experience_item:
+                                    display: 'Experience Item'
+                                    icon: text-formatting-image-bottom
+                                    fields:
+                                      -
+                                        handle: company_name
+                                        field:
+                                          type: text
+                                          display: 'Company Name'
+                                      -
+                                        handle: employment_date
+                                        field:
+                                          type: date
+                                          display: 'Employment Date'
+                                      -
+                                        handle: end_date
+                                        field:
+                                          type: date
+                                          display: 'End Date'
+                    showcase:
+                      display: Showcase
+                      icon: layout-sidebar-split-right
+                      fields:
+                        -
+                          handle: showcase_title
+                          field:
+                            type: text
+                            display: 'Showcase Title'
+                        -
+                          handle: showcase_subtitle
+                          field:
+                            type: text
+                            display: 'Showcase Subtitle'
+                        -
+                          handle: showcase_items
+                          field:
+                            collections:
+                              - showcase
+                            type: entries
+                            display: 'Showcase Items'
+                            create: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
