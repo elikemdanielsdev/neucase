@@ -13,7 +13,11 @@
     "jonassiewertsen/statamic-livewire": "^3.6",
     "laravel/framework": "^11",
     "laravel/tinker": "^2.9",
-    "statamic/cms": "^5.0"
+    "statamic/cms": "^5.0",
+    "ext-bcmath": "*",
+    "ext-exif": "*",
+    "ext-gd": "*",
+    "ext-mbstring": "*"
   },
   "require-dev": {
     "barryvdh/laravel-debugbar": "^3.8.1",
