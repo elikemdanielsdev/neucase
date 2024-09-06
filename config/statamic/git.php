@@ -95,7 +95,7 @@ return [
     */
 
    'paths' => [
-      //   base_path('content'),
+      base_path('content'),
       base_path('users'),
       resource_path('blueprints'),
       resource_path('fieldsets'),
