@@ -5,8 +5,10 @@
 /public/storage
 /public/vendor/statamic
 /storage/*.key
-/content
 /vendor
+
+/content
+
 .env
 .env.backup
 .env.production
