@@ -5,10 +5,11 @@ title: Bio
 blocks:
   -
     id: m0qodhy8
-    hero_title: 'About me'
+    hero_title: 'Get to know me'
     hero_subtitle: 'A little information about me and what I do.'
     type: hero
     enabled: true
+parent: home
 updated_by: f7a890be-7998-402c-a92d-590bd4765484
-updated_at: 1725624684
+updated_at: 1725624841
 ---
