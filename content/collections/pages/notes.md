@@ -9,6 +9,7 @@ blocks:
     hero_subtitle: 'My daily blog articles'
     type: hero
     enabled: true
+parent: home
 updated_by: f7a890be-7998-402c-a92d-590bd4765484
-updated_at: 1725627189
+updated_at: 1725627571
 ---
