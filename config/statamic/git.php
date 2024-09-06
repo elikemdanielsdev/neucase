@@ -95,7 +95,7 @@ return [
     */
 
    'paths' => [
-      base_path('content'),
+      // base_path('content'),
       base_path('users'),
       resource_path('blueprints'),
       resource_path('fieldsets'),
@@ -150,7 +150,7 @@ return [
     |
     */
 
-   'push' => env('STATAMIC_GIT_PUSH', true),
+   'push' => env('STATAMIC_GIT_PUSH', false),
 
    /*
     |--------------------------------------------------------------------------
