@@ -1,10 +1,9 @@
 ---
 id: home
-published: false
 blueprint: pages
 title: Home
 updated_by: f7a890be-7998-402c-a92d-590bd4765484
-updated_at: 1725668103
+updated_at: 1725694846
 blocks:
   -
     id: m0glcwy9
