@@ -12,14 +12,6 @@ tabs:
               required: true
               validate:
                 - required
-          -
-            handle: featured_image
-            field:
-              container: assets
-              type: assets
-              display: 'Featured Image'
-              folder: showcase/2024
-              max_files: 1
   sidebar:
     display: Sidebar
     sections:
@@ -42,3 +34,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: featured_image
+            field:
+              container: assets
+              type: assets
+              display: 'Featured Image'
+              folder: showcase/2024
+              max_files: 1
