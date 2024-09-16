@@ -3,7 +3,7 @@ id: home
 blueprint: pages
 title: Home
 updated_by: f7a890be-7998-402c-a92d-590bd4765484
-updated_at: 1725694846
+updated_at: 1726218872
 blocks:
   -
     id: m0glcwy9
@@ -13,12 +13,6 @@ blocks:
     subtitle: "I'm Elikem — a web designer with experience across fintech, and the media. I help startups create results-oriented websites."
     hero_title: 'Wireframes, interfaces, & code'
     hero_subtitle: "I'm Elikem — a web designer with experience across fintech, and the media. I help startups create results-oriented websites."
-  -
-    id: m0i6vm5x
-    type: showcase
-    enabled: true
-    showcase_title: Showcase
-    showcase_subtitle: 'Some of my creations'
   -
     id: m0hy3zww
     experience_title: Experience
@@ -67,4 +61,10 @@ blocks:
         end_date: '2020-05-30'
         type: experience_item
         enabled: true
+  -
+    id: m0i6vm5x
+    type: showcase
+    enabled: true
+    showcase_title: Showcase
+    showcase_subtitle: 'Some of my creations'
 ---
